@@ -1,0 +1,58 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+
+
+
+
+.wrapper{
+    display: inline-flex;
+}
+.wrapper .static-text{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+.wrapper .dynamic-text{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+.dynamic-text li{
+    color: #fc6d6d;
+    list-style: none;
+    font-size: 60px;
+    font-weight: 600;
+    position: relative;
+    top: 0;
+
+    animation: slide 4s steps(4) infinite;
+}
+
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
+}
+
+
+
+
+
+
